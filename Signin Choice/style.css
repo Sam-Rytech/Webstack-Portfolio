@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-image: url(/istockphoto-1210182430-1024x1024-transformed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-signin {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    background-position: center top;
+    border-radius: 10px;
+}
+
+.page {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 664px;
+    height: 307px;
+}
+
+.brand {
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+.Signup{
+    width: 306px;
+    padding: 12px 12px;
+    border-radius: 200px;
+    background-color: #0d7a5f;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.Signup:hover{
+    background-color: #055240;
+}
+.Login {
+    width: 306px;
+    padding: 12px 12px;
+    border-radius: 200px;
+    background-color: white;
+    border: 1px solid #0d7a5f;
+    color: #0d7a5f;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.Login:hover{
+    color: white;
+    background-color: #0d7a5f;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-image: none;
+    }
+    .page{
+        width: 90%;
+    }
+}

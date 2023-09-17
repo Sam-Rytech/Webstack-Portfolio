@@ -1,0 +1,68 @@
+body{
+    background-color: #F8F9FA;
+    margin: 0;
+}
+.form-signin{
+    max-width: 330px;
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+    display: table;
+}
+.page{
+    display: table-cell;
+    vertical-align: middle;
+}
+.brand{
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+h1{
+    font-weight: 400;
+    font-family: system-ui, -apple-system;
+    margin-bottom: 20px;
+}    
+.form-control{
+    width: 90%;
+    padding: 16px 12px;
+    font-size: 15px;
+    border: 1px #DEE2E6 solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.control{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 10px;
+}
+.checkbox{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+#checkbox{
+    margin-left: -1px;
+    height:  14px;
+    width: 14px;
+}
+.ctext{
+    font-size: 17px;
+}
+.submit{
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    border: 0;
+    color: white;
+    font-size: 16px;
+}
+.submit:hover{
+    background-color: #0a58ca;
+}
+@media screen {
+    
+}

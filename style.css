@@ -1,0 +1,292 @@
+body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.brandname{
+    font-size: 40px;
+    font-family: Helvetica;
+    color: #055240;
+    margin-left: 5px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.headerul{
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+}
+.headerli{
+    justify-content: space-between;
+}
+.headerlink{
+    color: black;
+}
+.headerlink > button {
+    background-color: white;
+    height: 40px;
+    border-radius: 10px;
+    color: #055240;
+    border-color: #055240;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    background-image: url(istockphoto-1210182430-1024x1024-transformed.jpeg);
+    height: 900px;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.image{
+   display: none; 
+}
+.seperation{
+    width: 50px;
+    border-top: 1px solid #0d7a5f;
+    margin: 20px auto;
+}
+
+.herocontainer{
+   background-color: white;
+   margin: auto;
+   text-align: center;
+   border-radius: 4px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 664px;
+   height: 307px;
+}
+.herocontainer > p{
+    font-size: 30px;
+}
+.herocontainer > .Just{
+    font-size: 19px;
+}
+.projects{
+    display: flex;
+}
+.otherjobs{
+    margin-top: 16;
+    margin: 25px 24px 0 24px;
+    display: flex;
+}
+.job{
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #0d7a5f;
+    color: #0d7a5f;
+    margin: 0 16px 16px 0;
+}
+.input{
+    width: 50%;
+    padding: 9px 24px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.help{
+    background-color: #0d7a5f;
+    color: white;
+    border: 1px solid #0d7a5f;
+    border-radius: 8px;
+    position: relative;
+    font-weight: 800;
+    padding: 9px 24px;
+    font-size: 18px;
+}
+.container > img{
+    height: 225px;
+    width: 420px;
+}
+.container{
+    width: auto;
+    border: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.17);
+}
+.popular{
+    font-size: 40px;
+    font-family: Inter, Arial;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    font-weight: 800;
+    padding: 0 9%;
+}
+.projectimage{
+    height: 225px;
+    width: auto;
+}
+
+
+.card-body{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.mine{
+    margin-top: 130px;
+}
+.stock{
+    width: 40.34vw;
+}
+.easier{
+    padding: 0 9% 0 9%;
+    margin-top: 70px;
+}
+.vouch{
+    margin-top: 20px;
+}
+.vouchl{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.lead{
+    font-size: 23px;
+}
+.headr{
+    font-size: 38px;
+}
+.feature{
+    margin-top: 50px;
+    margin-left: 7%;
+    /* margin-right: 5%; */
+}
+.featurer{
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+.featured{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: start;
+    padding: 0px 0px 50px 0px;
+    margin: 0px 0px 8px 0px;
+}
+.featureimage{
+    border-radius: 100%;
+    height: 120px;
+    width: auto;
+}
+.features{
+    text-align: center;
+    box-sizing: border-box;
+    width:29%;
+}
+.footer{
+    margin-top: 100px;
+}
+.stock1{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:600px){
+    body{
+        margin: 0;
+    }
+    .headerul{
+        display: none;
+    }
+    .brandname{
+        width: 100vw;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+    .hero{
+        background-image: none;
+        margin: 0;
+        height: 800px;
+    }
+    .herocontainer{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    .image{
+        display: block;
+        width: 100vw;
+        height: 217px;
+    }
+    .herocontainer > p{
+        font-size: 20px;
+        width: 100vw;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .input{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .help{
+        width: 90%;
+    }
+    .otherjobs{
+        display: block;
+    }
+    .job{
+        width: 100%;
+        margin: 0px 0px 10 0px;
+        padding: 9px 24px;
+    }
+    .popular{
+        font-size: 14px;
+        margin: 0 0 24px 0;
+    }
+    .stock{
+        display: none;
+    }
+    .stock1{
+        display: block;
+        height: 228px;
+        width: 100%;
+    }
+    .headr{
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .fw-normal{
+        font-weight: 800!important;
+    }
+    .lead{
+        display: none;
+    }
+    .vouchl{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .featured{
+        font-size: 20px;
+        font-weight: 500!important;
+    }
+    .featurer{
+        display: block;
+        margin: 0;
+    }
+    .features{
+        width: 90vw;
+    }
+    .card-text{
+        font-size: 16px;
+    }
+    .easier{
+        margin: 0;
+    }
+    .mine{
+        margin-top: 30px;
+    }
+}
