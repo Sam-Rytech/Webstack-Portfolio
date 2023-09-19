@@ -8,7 +8,7 @@ const { port } = require('./config');
 const PORT = process.env.PORT || port;
 
 // Express Routes Import
-const AuthorizationRoutes = require('./authorization/routes');
+const AuthRoutes = require('./auth/routes');
 const UserRoutes = require('./users/routes');
 const BeedRoutes = require('./beeds/routes');
 
@@ -40,7 +40,7 @@ sequelize
     console.log('Sequelize Initialised!!');
 
     // Attaching the Authentication and User Routes to the app.
-    app.use('/', AuthorizationRoutes);
+    app.use('/', AuthRoutes);
     app.use('/user', UserRoutes);
     app.use('/beed', BeedRoutes);
 
