@@ -1,0 +1,23 @@
+{
+  "name": "beedo_server",
+  "version": "0.0.1",
+  "description": "A web based platform to find premium help",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Kay Cee, ",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "8.12.0",
+    "cors": "2.8.5",
+    "express": "4.18.2",
+    "jsonwebtoken": "9.0.0",
+    "morgan": "1.10.0",
+    "sequelize": "6.31.1",
+    "sqlite3": "5.1.6"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}
