@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-image: url(../Images/homeBackgroundImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#brandname {
+    font-size: 40px;
+    font-family: Helvetica;
+    color: #055240;
+    margin-left: 5px;
+    font-weight: 700; 
+}
+#navDropDown {
+    color: #055240;
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
