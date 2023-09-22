@@ -16,12 +16,11 @@ function Home() {
           <Navbar.Brand href="#" id="brandname">BEEDO</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
+          <div id="navDropDown">
             <Nav
               classname="me-auto my-2 my-lg-0"
               id="navbarScroll"
-              navbarScroll
             >
-              <div id="navDropDown">
               <NavDropdown title="Locations" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Lagos</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -29,14 +28,37 @@ function Home() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">Port Harcourt</NavDropdown.Item>
               </NavDropdown>
-              </div>
             </Nav>
-            
+            <Nav
+              classname="me-auto my-2 my-lg-0"
+              id="navbarScroll"
+            >
+              <NavDropdown title="Services" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Mounting</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action4">Furniture Assembly</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Home repair</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Cleaning</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Electrical</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Plumbing</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Painting</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Air Conditioner</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Carpentry</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">Help Moving</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <body>
-      </body>
     </div>
 )}
 

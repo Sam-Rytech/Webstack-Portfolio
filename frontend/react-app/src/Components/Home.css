@@ -14,12 +14,14 @@ body {
     font-weight: 700; 
 }
 #navDropDown {
-    color: #055240;
-    font-size: 30px;
-    font-weight: 300;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
     margin-right: 10px;
     margin-left: auto;
+    border-left: 200px;
+    border-right: 200px;
     display: flex;
-    flex-direction: row;
-    flex: 1;
+    justify-content: flex-end;
+    opacity: 100%;
 }
