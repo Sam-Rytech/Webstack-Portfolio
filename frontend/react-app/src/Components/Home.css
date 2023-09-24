@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url(../Images/homeBackgroundImage.jpeg);
+    /* background-image: url(../Images/homeBackgroundImage.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,15 +13,79 @@ body {
     margin-left: 5px;
     font-weight: 700; 
 }
+#services {
+    margin-right: 40px;
+}
 #navDropDown {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-left: auto;
     border-left: 200px;
     border-right: 200px;
     display: flex;
     justify-content: flex-end;
     opacity: 100%;
+}
+Button {
+    margin-right: 20px;
+    color: #055240
+}
+.hero {
+    background-image: url(../Images/homeBackgroundImage.jpeg);
+    height: 900px;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.herocontainer {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 664px;
+    height: 307px;
+}
+.separation {
+    width: 50px;
+    border-top: 1px solid #0d7a5f;
+    margin: 20px auto;
+}
+.strongt {
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+}
+.help {
+    background-color: #0d7a5f;
+    color: white;
+    border: 1px solid #0d7a5f;
+    border-radius: 8px;
+    position: relative;
+    font-weight: 800;
+    padding: 9px 24px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.otherjobs {
+    margin-top: 16;
+    margin: 25px 24px 0 24px;
+    display: flex;
+}
+.job {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #0d7a5f;
+    color: #0d7a5f;
+    margin: 0 16px 16px 0;
+}
+.input {
+    width: 50%;
+    padding: 9px 24px;
+    border-radius: 8px;
+    border: 1px solid;
 }
