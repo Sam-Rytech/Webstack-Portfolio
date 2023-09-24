@@ -5,7 +5,15 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import helpMoving from '../Images/helpMoving.png';
+import heavyLifting from '../Images/heavyLifting.jpeg';
+import barber from '../Images/barber.jpg';
+import electricalHelp from '../Images/electricalHelp.jpeg';
+import catering from '../Images/catering.jpeg';
+import photographer from '../Images/photographer.jpg';
+import madeEasy from '../Images/madeEasy.jpeg';
 
 
 function Home() {
@@ -81,17 +89,97 @@ function Home() {
           </div>
         </div>
       </section>
-      <section>
-      <div className="album py-5 bg-body-tertiary">
-        <p className="popular"><strong> Popular projects in your area </strong></p>
-        <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div className="col">
-              <div className="card shadow-sm"></div>
+      <section className="section2">
+        <div className="popular">
+          <p><strong> Popular projects in your area </strong></p>
+        </div>
+        <div className="photo-container">
+          <div className="photo-box">
+            <img
+              src={helpMoving}
+              alt="helpMoving"
+              className="photo"
+              />
+            <div className="photo-text-box">
+              <p className="photo-text">Help Moving</p>
+            </div>
+          </div>
+          <div className="photo-box">
+            <img
+              src={heavyLifting}
+              alt="heavyLifting"
+              className="photo"
+              />
+              <div className="photo-text-box">
+              <p className="photo-text">Heavy lifting</p>
+            </div>
+          </div>
+          <div className="photo-box">
+            <img
+              src={barber}
+              alt="barber"
+              className="photo"
+              />
+              <div className="photo-text-box">
+              <p className="photo-text">Barber</p>
+            </div>
+          </div>
+          <div className="photo-box">
+            <img
+              src={electricalHelp}
+              alt="electricalHelp"
+              className="photo"
+              />
+              <div className="photo-text-box">
+              <p className="photo-text">Electrical help</p>
+            </div>
+          </div>
+          <div className="photo-box">
+            <img
+              src={catering}
+              alt="catering"
+              className="photo"
+              />
+              <div className="photo-text-box">
+              <p className="photo-text">Catering</p>
+            </div>
+          </div>
+          <div className="photo-box">
+            <img
+              src={photographer}
+              alt="photographer"
+              className="photo"
+              />
+              <div className="photo-text-box">
+              <p className="photo-text">photographer</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className="section3">
+        <div className="s3-firsthalf">
+          <div className="s3-d1-text-box">
+            <h2 className="s3-d1-text-title">Everyday life made easy</h2>
+            <p className="s3-d1-text">
+            When life gets busy, you don't have to tackle it alone. Get time back
+            for what you love by booking help from Beedo with the click of a button.
+            </p>
+            <ul className="s3-d1-list">
+              <li className="s3-d1-list-item">Choose your Beedoer by reviews, skills, and price</li>
+              <li className="s3-d1-list-item">Schedule when it works for you — as early as today</li>
+              <li className="s3-d1-list-item">Chat with your Beedoer in the app</li>
+              <li className="s3-d1-list-item">Pay in the app once the task is completed</li>
+            </ul>
+          </div>
+          <div className="s3-d1-img-box">
+            <img
+              src={madeEasy}
+              alt="madeEasy"
+              className="s3-d1-img"
+              />
+          </div>
+        </div>
+        <div className="s3-secondhalf"></div>
       </section>
     </div>
 )}
