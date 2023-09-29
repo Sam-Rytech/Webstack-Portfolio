@@ -14,7 +14,9 @@ import electricalHelp from '../Images/electricalHelp.jpeg';
 import catering from '../Images/catering.jpeg';
 import photographer from '../Images/photographer.jpg';
 import madeEasy from '../Images/madeEasy.jpeg';
-
+import black1 from '../Images/black1.jpg';
+import black2 from '../Images/black2.jpg';
+import black3 from '../Images/black3.jpg';
 
 function Home() {
   return (
@@ -179,7 +181,52 @@ function Home() {
               />
           </div>
         </div>
-        <div className="s3-secondhalf"></div>
+        <section>
+      <div class="feature">
+        <p class="featured"><strong>Featured Beedoers</strong></p>
+        <div class="featurer">
+          <div class="features">
+            <img
+              src={black1}
+              alt=""
+              srcset=""
+              class="featureimage"
+            />
+            <h2 class="">Marques Kofi</h2>
+            <p>
+              I have supplies and resources available for helping you with your
+              move ins, move outs and move around.
+            </p>
+          </div>
+          <div class="features">
+            <img
+              src={black2}
+              alt=""
+              srcset=""
+              class="featureimage"
+            />
+            <h2 class="">Dele Salim</h2>
+            <p>
+              I have completed many tasks moving furniture safely from offices,
+              apartments, and homes.
+            </p>
+          </div>
+          <div class="features">
+            <img
+              src={black3}
+              alt=""
+              srcset=""
+              class="featureimage"
+            />
+            <h2 class="">Angelena Ivy</h2>
+            <p>
+              I have experience copywriting from current job. I have listed over
+              1000 products on different online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
       </section>
     </div>
 )}
