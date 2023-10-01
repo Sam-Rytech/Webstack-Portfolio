@@ -17,6 +17,7 @@ import madeEasy from '../Images/madeEasy.jpeg';
 import black1 from '../Images/black1.jpg';
 import black2 from '../Images/black2.jpg';
 import black3 from '../Images/black3.jpg';
+import lastimage from '../Images/lastimage.jpeg';
 
 function Home() {
   return (
@@ -181,7 +182,7 @@ function Home() {
               />
           </div>
         </div>
-        <section>
+      <section>
       <div class="feature">
         <p class="featured"><strong>Featured Beedoers</strong></p>
         <div class="featurer">
@@ -226,7 +227,30 @@ function Home() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      </section>
+      <section className="section4">
+        <div className="s4-firsthalf">
+          <div className="s4-d1-img-box">
+          <img
+            src={lastimage}
+            alt=""
+            className="s4-d1-img"
+          />
+          </div>
+          <div className="s4-d1-text-box">
+            <h2 className="s4-d1-text-title">A go-to team at your fingertips.</h2>
+            <p className="s4-d1-text">
+            Build your team of local, background-checked Taskers to help with - and
+            for - life. Whatever you need, they've got you covered.
+            </p>
+            <ul className="s4-d1-list">
+              <li className="s4-d1-list-item">Compare tasker reviews, ratings and prices</li>
+              <li className="s4-d1-list-item">Choose and connect with the best person for the job</li>
+              <li className="s4-d1-list-item">Save your favorites to book again and again</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
 )}
