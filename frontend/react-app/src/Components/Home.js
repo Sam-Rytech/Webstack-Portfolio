@@ -252,6 +252,36 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className="section5">
+        <div className="footerCard">
+        <div className="discover">
+          <h2>Discover</h2>
+          <p>Become a Beedoer</p>
+          <p>Services by city</p>
+          <p>All services</p>
+          <p>Elite</p>
+          <p>Beedoers</p>
+          <p>Help</p>
+        </div>
+        <div className="aboutUs">
+          <h2>Company</h2>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Terms & Privacy</p>
+        </div>
+        <div className="socialMedia">
+          <h2>Social Media</h2>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+        </div>
+        <div className="contactUs">
+          <h2>Contact Us</h2>
+          <p>Tel: +234 0813 733 9240</p>
+          <p>Email: beedo@outlook.com</p>
+        </div>
+        </div>
+      </section>
     </div>
 )}
 
