@@ -18,8 +18,13 @@ import black1 from '../Images/black1.jpg';
 import black2 from '../Images/black2.jpg';
 import black3 from '../Images/black3.jpg';
 import lastimage from '../Images/lastimage.jpeg';
+import { useEffect } from 'react';
 
 function Home() {
+  useEffect(() => {
+    // set the page title when the component mounts
+    document.title = 'Home - Beedo';
+  }, []);
   return (
     <div className="home">
       <Navbar expand="lg" className="bg-body-tertiary">
