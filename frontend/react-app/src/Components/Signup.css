@@ -1,4 +1,4 @@
-.pageLogin {
+.page {
     background-color: #c8f5eb;
     display: flex;
     justify-content: center;
@@ -6,48 +6,65 @@
     width: 100vw;
     height: 100vh;
   }
-  .formLogin {
-    width: 450px;
+  .form {
+    width: 60vw;
+    height: 60vh;
     box-shadow: #055240 0px 0px 10px 0px;
     padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 8px;
     background-color: #ace0d4;
+    object-fit: cover;
   }
-  .form-contentLogin {
+.form-content {
     padding-left: 12%;
     padding-right: 12%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+}
   
-.form-titleLogin {
+.form-title {
     text-align: center;
     margin-bottom: 1em;
-    font-size: 24px;
+    font-size: 40px;
     color: #055240;
     font-weight: 800;
   }
+.inputSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
   
-  label {
+label {
     font-size: 14px;
     font-weight: 600;
     color: #055240;
-  }
-  #submit {
+    text-align: center;
+}
+#inputLabel {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 40%;
+}
+#submit {
     margin-left: 30%;
     margin-right: 30%;
-  }
-  #ask {
+}
+#ask {
     margin-top: 1em;
   }
-  .loginTitleLogin {
+.loginTitle {
     text-align: center;
     margin-bottom: 2em;
     font-size: 24px;
     color: #055240;
     font-weight: 800;
-  }
-  #fieldLogin {
+}
+#field {
     background-color: #c8f5eb;
-  }
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    text-align: center;
+}

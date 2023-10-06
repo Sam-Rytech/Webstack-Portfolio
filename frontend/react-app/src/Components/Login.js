@@ -4,7 +4,11 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from './auth'
 
 function Login() {
-    const inputRef = useRef(null)
+  const inputRef = useRef(null)
+  useEffect(() => {
+    // set the page title when the component mounts
+    document.title = 'Login - Beedo';
+  }, []);
 
   const Navigate = useNavigate()
   useEffect(() => {
@@ -30,10 +34,10 @@ function Login() {
   }
     return (
         <div className='page'>
-      <form className='form' onSubmit={login}>
+      <form className='formLogin' onSubmit={login}>
         <div className='form-content'>
           <h1 className='loginTitle'>BEEDO</h1>
-          <h3 className='form-title'>Sign In</h3>
+          <h3 className='form-titleLogin'>Sign In</h3>
           <div className="form-group mt-3">
             <label>Email Address</label>
             <input
