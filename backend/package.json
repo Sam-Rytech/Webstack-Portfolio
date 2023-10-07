@@ -4,7 +4,7 @@
   "description": "A web based platform to find premium help",
   "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Kay Cee, ",
   "license": "ISC",
