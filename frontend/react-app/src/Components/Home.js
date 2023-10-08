@@ -19,12 +19,17 @@ import black2 from '../Images/black2.jpg';
 import black3 from '../Images/black3.jpg';
 import lastimage from '../Images/lastimage.jpeg';
 import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
     // set the page title when the component mounts
     document.title = 'Home - Beedo';
   }, []);
+  const Navigate = useNavigate();
+  const handleLoginButtonClick = () => {
+    Navigate('/login');
+  }
   return (
     <div className="home">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -75,7 +80,13 @@ function Home() {
               </NavDropdown>
               </div>
             </Nav>
-            <Button variant="outline-success" id="navButton">Login/Sign-up</Button>
+            <Button 
+              variant="outline-success"
+              id="navButton"
+              onClick={handleLoginButtonClick}
+              >
+              Login/Sign-up
+            </Button>
             <Button variant="outline-success" id="navButton">Become a Beedoer</Button>
           </div>
           </Navbar.Collapse>

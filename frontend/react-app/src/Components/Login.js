@@ -11,43 +11,48 @@ function Login() {
   }, []);
 
   const Navigate = useNavigate()
+  const handleBEEDOClick = () => {
+    Navigate(`/`)
+  }
   useEffect(() => {
     inputRef.current.focus()
   }, [])
-  const [emailAddress, setEmailAddress] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const auth = useAuth();
   async function login(e) {
-    auth.login({emailAddress});
+    auth.login({username});
     e.preventDefault();
     const response = await fetch('http://localhost:4000/login', {
       method: 'POST',
-      body: JSON.stringify({emailAddress, password}),
+      body: JSON.stringify({username, password}),
       headers: {"Content-Type": "application/json"},
       credentials: 'include'
     });
     if (response.ok === false) {
       alert('Incorrect email address or password');
     } else {
-      Navigate(`/home`)
+      alert('Successfully logged in')
+      // Navigate(`/`)
     }
   }
     return (
         <div className='page'>
       <form className='formLogin' onSubmit={login}>
         <div className='form-content'>
-          <h1 className='loginTitle'>BEEDO</h1>
+          <h1 className='loginTitle' onClick={handleBEEDOClick}>BEEDO</h1>
           <h3 className='form-titleLogin'>Sign In</h3>
           <div className="form-group mt-3">
-            <label>Email Address</label>
+            <label>Username</label>
             <input
               ref={inputRef}
-              type="email"
+              type="name"
               className='form-control mt-1'
-              placeholder='Enter email'
-              value={emailAddress}
-              onChange={e => setEmailAddress(e.target.value)}
+              placeholder='Enter username'
+              value={username}
+              onChange={e => setUsername(e.target.value)}
               id='field'
+              required
             />
           </div>
           <div className="form-group mt-3">
@@ -59,6 +64,7 @@ function Login() {
               value={password}
               onChange={e => setPassword(e.target.value)}
               id='field'
+              required
             />
           </div>
           <div className="d-grid gap-2 mt-3" id='submit' >

@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState } from 'react'
 import './Signup.css'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 
 function SignUp() {
@@ -9,15 +10,22 @@ function SignUp() {
     document.title = 'Sign Up - Beedo';
     }, []);
   const inputRef = useRef(null)
+  
+  const Navigate = useNavigate()
+  const handleBEEDOClick = () => {
+    Navigate(`/`)
+  }
 
   useEffect(() => {
     inputRef.current.focus()
     }, [])
 
+  const [username, setUsername] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [age, setAge] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [passwordsMatch, setPasswordsMatch] = useState(true);
@@ -32,13 +40,13 @@ function SignUp() {
   };
   const register = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:4000/register', {
+    const response = await fetch('http://localhost:4000/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({firstName, lastName, emailAddress, phoneNumber, password}),
+      body: JSON.stringify({firstName, lastName, emailAddress, phoneNumber, username, age, password}),
     });
     if (response.ok === false) {
-      alert('Email address or employee ID already exists');
+      alert('Error Occured');
     } else {
       alert('Account created successfully');
       window.location.href = '/login';
@@ -47,7 +55,7 @@ function SignUp() {
   return (
     <div className='page'>
       <form className='form' onSubmit={register}>
-        <h3 className='form-title'>BEEDO</h3>
+        <h3 className='form-title' onClick={handleBEEDOClick}>BEEDO</h3>
         <div className='inputSection'>
         <div className='form-group mt-3' id='inputLabel'>
           <label>First Name</label>
@@ -61,6 +69,7 @@ function SignUp() {
                 onChange={e => setFirstName(e.target.value)}
                 id='field'
                 field='firstName'
+                required
               />
           </div>
         </div>
@@ -75,6 +84,7 @@ function SignUp() {
                 placeholder='Enter last name'
                 id='field'
                 field='lastName'
+                required
               />
           </div>
         </div>
@@ -89,6 +99,7 @@ function SignUp() {
                 onChange={e => setEmailAddress(e.target.value)}
                 id='field'
                 field='emailAddress'
+                required
               />
           </div>
         </div>
@@ -103,10 +114,41 @@ function SignUp() {
               value={phoneNumber}
               onChange={e => setPhoneNumber(e.target.value)}
               placeholder='Enter phone number'
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required
               field='phoneNumber'
             />
+          </div>
+        </div>
+        <div className='form-group mt-3' id='inputLabel'>
+          <label>Username</label>
+          <div className='form-check form-check-inline'>
+              <input
+                ref={inputRef}
+                type='name'
+                className='form-control mt-1'
+                placeholder='Enter username'
+                value={username}
+                onChange={e => setUsername(e.target.value)}
+                id='field'
+                field='username'
+                required
+              />
+          </div>
+        </div>
+        <div className='form-group mt-3' id='inputLabel'>
+          <label>Age</label>
+          <div className='form-check form-check-inline'>
+              <input
+                ref={inputRef}
+                type='age'
+                className='form-control mt-1'
+                placeholder='Enter Age'
+                value={age}
+                onChange={e => setAge(e.target.value)}
+                id='field'
+                field='age'
+                required
+              />
           </div>
         </div>
         <div className='form-group mt-3' id='inputLabel'>
@@ -120,6 +162,7 @@ function SignUp() {
                 placeholder='Enter password'
                 id='field'
                 field='password'
+                required
               />
           </div>
         </div>
@@ -134,6 +177,7 @@ function SignUp() {
                 placeholder='Confirm password'
                 id='field'
                 field='confirmPassword'
+                required
               />
             </div>
           </div>
