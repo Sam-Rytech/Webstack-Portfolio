@@ -25,15 +25,19 @@ module.exports = {
     role: {
       type: 'string',
       enum: Object.values(roles)
+    },
+    phoneNumber: {
+      type: 'string'
     }
   },
   required: [
     'username',
     'email',
     'password',
-    'age',
+    'phoneNumber',
     'firstName',
-    'lastName'
+    'lastName',
+    'age'
   ],
   additionalProperties: false
 };

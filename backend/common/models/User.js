@@ -37,6 +37,10 @@ const UserModel = {
   lastName: {
     type: DataTypes.STRING,
     allowNull: false
+  },
+  phoneNumber: {
+    type: DataTypes.STRING,
+    allowNull: false
   }
 };
 

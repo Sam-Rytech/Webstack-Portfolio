@@ -1,8 +1,8 @@
 module.exports = {
   type: 'object',
   properties: {
-    age: {
-      type: 'number'
+    phoneNumber: {
+      type: 'string'
     },
     firstName: {
       type: 'string'

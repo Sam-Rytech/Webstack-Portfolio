@@ -1,5 +1,5 @@
 module.exports = {
-  port: 3000,
+  port: 4000,
   jwtSecret: '!!CryptoCat@!!',
   jwtExpirationInSeconds: 60 * 60, // 1 hour
   roles: {
